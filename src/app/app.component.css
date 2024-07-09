@@ -134,10 +134,11 @@ position: relative;
     height: 100% ;
     position: relative;
     overflow: hidden; /* Ensure the animation stays within the container */
+    
   }
   #myAnimation {
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     position: absolute;
     background-color:#fff;
     border-radius: 50%; /* Makes the element a circle */
@@ -147,20 +148,20 @@ position: relative;
 
   }
   #myAnimation1 {
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     position: absolute;
-    background-color:#fff;
+    background-color:#ffffff;
 
     border-radius: 50%; /* Makes the element a circle */
-  box-shadow:  -5px 5px 10px #888888;
+  box-shadow:  -5px 5px 10px #e3ed21;
   margin-top: 40%;
   margin-left: 20%;
 
   }
   #myAnimation2 {
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     position: absolute;
     background-color:#fff;
 

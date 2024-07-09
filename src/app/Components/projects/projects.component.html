@@ -3,10 +3,10 @@
     <h1>My Projects</h1>
     <p>Check out some of my recent projects.</p>
   </div>
-  <div class="projects-content">
-    <div class="project-card" *ngFor="let project of projects">
+  <div class="projects-contents">
+    <div class="project-cards" *ngFor="let project of projects">
       <img [src]="project.image" [alt]="project.title" />
-      <div class="project-info">
+      <div class="project-infos">
         <h3>{{ project.title }}</h3>
         <p>{{ project.technologies }}</p>
         <p>{{ project.description }}</p>
