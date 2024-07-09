@@ -1,0 +1,67 @@
+.about-container {
+    height: auto;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+    color: white;
+
+
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(254, 248, 248);
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+        border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(254, 248, 248);
+  }
+  
+  .about-avatar {
+    background-image: url('../../../assets/IMG-20230307-WA0009.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about-content mat-card {
+    animation: slideIn 0.5s ease-in-out;
+    background-color: transparent 
+
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .button-link {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button-link:hover {
+    background-color: #45a049;
+  }

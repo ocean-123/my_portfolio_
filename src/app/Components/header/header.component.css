@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    /* Adjust this value to control the space above the image */
+    /* Adjust this value to control the space below the image */
+  }
+  
+  .overlapping-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+     border-radius: 50%;
+     z-index: 1;
+   
+    
+
+  }
+  
+  .top-div {
+padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+  
+  }
+  .bottom-div{
+    padding: 20px;
+   background-color: #3547d5;
+    text-align: center;
+    position: relative;
+  
+  }

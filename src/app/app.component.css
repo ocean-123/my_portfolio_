@@ -1,0 +1,171 @@
+.main{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100px 420px auto;
+    position: relative;
+    grid-gap: 50px;
+ 
+    
+}
+.first{
+border: 1px solid whitesmoke;
+margin-top: 50px;
+margin-bottom: 50px;
+border: 1px solid;
+  /* padding: 10px; */
+  box-shadow:  5px 5px 10px #888888;
+
+
+}
+.last{
+/* border: 1px solid whitesmoke; */
+margin: 5px;
+
+  /* padding: 10px; */
+  box-shadow:  -5px 5px 10px #888888;
+  overflow: auto;
+
+
+}
+
+.mid{
+    margin-top: 10px;
+    display: grid;
+grid-template-rows: 50% 50%;
+
+position: relative;
+margin-bottom: 10px;
+position: relative;
+  /* padding: 10px; */
+  box-shadow: -5px  5px 10px #888888;
+
+}
+
+.mid-upper {
+  position: relative;
+  background: #000;
+
+}
+.profile-info {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+}
+
+
+.overlapping-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+     z-index: 1 !important;  
+     border-radius: 50%;
+  box-shadow:  -5px 5px 10px #888888;
+
+     
+}
+.download-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+.mid-lower{
+/* border: 1px solid whitesmoke; */
+position: relative;
+
+
+  
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+  }
+
+
+  
+  
+  :host {
+    display: block;
+    overflow: hidden;
+    /* position: relative; */
+    
+      /* display: block; */
+      /* background-color: inherit; */
+      /* color: inherit; */
+      /* transition: background-color 0.3s ease, color 0.3s ease; */
+    
+  }
+  :host.light-mode {
+    background-color: #000;
+  }
+  #myContainer {
+    width:100%;
+    height: 100% ;
+    position: relative;
+    overflow: hidden; /* Ensure the animation stays within the container */
+  }
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color:#fff;
+    border-radius: 50%; /* Makes the element a circle */
+  box-shadow:  -5px 5px 10px #888888;
+  margin-top: 20%;
+
+
+  }
+  #myAnimation1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color:#fff;
+
+    border-radius: 50%; /* Makes the element a circle */
+  box-shadow:  -5px 5px 10px #888888;
+  margin-top: 40%;
+  margin-left: 20%;
+
+  }
+  #myAnimation2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color:#fff;
+
+    border-radius: 50%; /* Makes the element a circle */
+  box-shadow:  -5px 5px 10px #888888;
+
+  }
+  

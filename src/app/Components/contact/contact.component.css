@@ -1,0 +1,77 @@
+.contact-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+    color: #fff;
+  }
+  
+  .contact-header {
+    position: absolute;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(254, 248, 248);
+  }
+  
+  .contact-form {
+    margin-top: 100px;
+    position: absolute;
+height: auto;
+    width: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(254, 248, 248);
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .resume-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .download-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .download-btn:hover {
+    background-color: #45a049;
+  }
+  mat-form-field{
+    display: flex;
+    height: 100%;
+    width: 100%;
+   margin-left: 3%;
+  }
+  form{
+    justify-content: center;
+  }

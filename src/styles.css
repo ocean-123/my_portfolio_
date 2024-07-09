@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto,
+     "Helvetica Neue", sans-serif;
+background-color: #12162f; }
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  // Buttons and Links 
+  button, a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  // Material UI Components 
+  .mat-sidenav-container {
+    height: 100%;
+  }
+  
+  .mat-sidenav, .mat-sidenav-content {
+    padding: 1rem;
+  }
+  
+  .mat-card {
+    margin: 1rem;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  // Responsive Styles 
+  @media (max-width: 767px) {
+  // Styles for mobile devices 
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    button, a {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .mat-sidenav, .mat-sidenav-content {
+      padding: 0.5rem;
+    }
+  
+    .mat-card {
+      margin: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    // Styles for tablets 
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    button, a {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .mat-sidenav, .mat-sidenav-content {
+      padding: 1rem;
+    }
+  
+    .mat-card {
+      margin: 0.75rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    // Styles for desktops 
+    h1 {
+      font-size: 2.8rem;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  
+    button, a {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .mat-sidenav, .mat-sidenav-content {
+      padding: 1.5rem;
+    }
+  
+    .mat-card {
+      margin: 1rem;
+    }
+  } */

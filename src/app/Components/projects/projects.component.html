@@ -1,0 +1,22 @@
+<div class="projects-container">
+  <div class="projects-header">
+    <h1>My Projects</h1>
+    <p>Check out some of my recent projects.</p>
+  </div>
+  <div class="projects-content">
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" [alt]="project.title" />
+      <div class="project-info">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.technologies }}</p>
+        <p>{{ project.description }}</p>
+        <div class="project-actions">
+          <a [href]="project.liveDemo" target="_blank" mat-button>Live Demo</a>
+          <a [href]="project.sourceCode" target="_blank" mat-button
+            >Source Code</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
