@@ -1,10 +1,4 @@
-<!-- <router-outlet></router-outlet> -->
-<!-- <app-sidenav></app-sidenav> -->
-<!-- <app-header></app-header> -->
-
-<!-- <button style="float: left" (click)="resetPositions()" class="button-reset"> -->
-<!-- Reset -->
-<!-- </button> -->
+<!-- app.html -->
 
 <div class="main">
   <div class="first">
@@ -13,16 +7,10 @@
 
   <div class="mid">
     <div class="mid-upper">
-      <!-- <img
-        src="../../../assets/code-java-programming-life-hd-wallpaper-preview.jpg"
-        alt=""
-        style="width: 100%; height: 100%"
-      /> -->
       <div id="myContainer">
         <div id="myAnimation"></div>
         <div id="myAnimation1"></div>
         <div id="myAnimation2"></div>
-
         <div id="myAnimation3"></div>
         <div id="myAnimation4"></div>
         <div id="myAnimation5"></div>
@@ -32,8 +20,7 @@
     <div class="mid-lower">
       <img
         src="../../../assets/IMG-20230307-WA0009.jpg"
-        alt=""
-        srcset=""
+        alt="Profile Image"
         class="overlapping-image"
       />
       <div class="profile-info">
@@ -70,7 +57,6 @@
           color="primary"
           href="your-cv.pdf"
           class="download-btn"
-          style="margin-top: 10px"
         >
           Download Resume
         </button>
@@ -84,10 +70,12 @@
       </button>
     </div>
   </div>
+
   <div class="last">
     <router-outlet></router-outlet>
   </div>
 </div>
+
 <script>
   function myMove() {
     var elem = document.getElementById("myAnimation");

@@ -1,53 +1,42 @@
-.main{
-    background-color: transparent;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 100px 420px auto;
-    position: relative;
-    grid-gap: 50px;
- 
-    
+/* Existing CSS */
+.main {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100px 420px auto;
+  position: relative;
+  grid-gap: 50px;
 }
-.first{
-border: 1px solid whitesmoke;
-margin-top: 50px;
-margin-bottom: 50px;
-border: 1px solid;
-  /* padding: 10px; */
-  box-shadow:  5px 5px 10px #888888;
 
-
+.first {
+  border: 1px solid whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid;
+  box-shadow: 5px 5px 10px #888888;
 }
-.last{
-/* border: 1px solid whitesmoke; */
-margin: 5px;
 
-  /* padding: 10px; */
-  box-shadow:  -5px 5px 10px #888888;
+.last {
+  margin: 5px;
+  box-shadow: -5px 5px 10px #888888;
   overflow: auto;
-
-
 }
 
-.mid{
-    margin-top: 10px;
-    display: grid;
-grid-template-rows: 50% 50%;
-
-position: relative;
-margin-bottom: 10px;
-position: relative;
-  /* padding: 10px; */
-  box-shadow: -5px  5px 10px #888888;
-
+.mid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: -5px 5px 10px #888888;
 }
 
 .mid-upper {
   position: relative;
   background: #000;
-
 }
+
 .profile-info {
   position: absolute;
   bottom: 100px;
@@ -56,7 +45,6 @@ position: relative;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
 }
 
 .social-icons {
@@ -70,22 +58,20 @@ position: relative;
   margin: 0 10px;
 }
 
-
 .overlapping-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-     z-index: 1 !important;  
-     border-radius: 50%;
-  box-shadow:  -5px 5px 10px #888888;
-
-     
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1 !important;
+  border-radius: 50%;
+  box-shadow: -5px 5px 10px #888888;
 }
+
 .download-btn {
   background-color: #4CAF50;
   color: #fff;
@@ -100,73 +86,103 @@ position: relative;
   background-color: #45a049;
 }
 
-.mid-lower{
-/* border: 1px solid whitesmoke; */
-position: relative;
-
-
-  
+.mid-lower {
+  position: relative;
 }
 
-.download-btn:hover {
-    background-color: #45a049;
-  }
+:host {
+  display: block;
+  overflow: hidden;
+}
 
+:host.light-mode {
+  background-color: #000;
+}
 
-  
-  
-  :host {
-    display: block;
-    overflow: hidden;
-    /* position: relative; */
-    
-      /* display: block; */
-      /* background-color: inherit; */
-      /* color: inherit; */
-      /* transition: background-color 0.3s ease, color 0.3s ease; */
-    
-  }
-  :host.light-mode {
-    background-color: #000;
-  }
-  #myContainer {
-    width:100%;
-    height: 100% ;
-    position: relative;
-    overflow: hidden; /* Ensure the animation stays within the container */
-    
-  }
-  #myAnimation {
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    background-color:#fff;
-    border-radius: 50%; /* Makes the element a circle */
-  box-shadow:  -5px 5px 10px #888888;
+#myContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#myAnimation,
+#myAnimation1,
+#myAnimation2 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: -5px 5px 10px #888888;
+}
+
+#myAnimation {
+  background-color: #fff;
   margin-top: 20%;
+}
 
-
-  }
-  #myAnimation1 {
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    background-color:#ffffff;
-
-    border-radius: 50%; /* Makes the element a circle */
-  box-shadow:  -5px 5px 10px #e3ed21;
+#myAnimation1 {
+  background-color: #ffffff;
+  box-shadow: -5px 5px 10px #e3ed21;
   margin-top: 40%;
   margin-left: 20%;
+}
 
+#myAnimation2 {
+  background-color: #fff;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
-  #myAnimation2 {
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    background-color:#fff;
 
-    border-radius: 50%; /* Makes the element a circle */
-  box-shadow:  -5px 5px 10px #888888;
-
+  .first, .mid, .last {
+    margin: 10px;
+    box-shadow: 2px 2px 5px #888888;
   }
-  
+
+  .overlapping-image {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .overlapping-image {
+    max-width: 120px;
+    height: 120px;
+  }
+
+  .profile-info {
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .overlapping-image {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .profile-info {
+    bottom: 60px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+  }
+}
